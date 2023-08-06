@@ -15,5 +15,3 @@ def imageCaptioning(path):
         data = f.read()
     response = requests.post(url=url, headers=headers, data=data)
     return response.json()[0]['generated_text']
-
-# people wearing face masks walking down a long hallway with people wearing masks
